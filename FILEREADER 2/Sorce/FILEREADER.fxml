@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Pos?>
+
+<BorderPane fx:id="MasterPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500" minWidth="500"
+     prefHeight="810" prefWidth="1440" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+     fx:controller="FILEREADER">
+
+     <top>
+
+          <HBox prefHeight="30" prefWidth="200.0" BorderPane.alignment="CENTER" style="-fx-background-color:#141414">
+               <children>
+
+
+                    <StackPane prefHeight="30" prefWidth="100">
+                         <children>
+                              <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                                   <graphic>
+                                        <ImageView fitHeight="30" fitWidth="200.0" pickOnBounds="true"
+                                             preserveRatio="true">
+                                             <image>
+                                                  <Image url="Data/Basis_Image/icon_111240_256.png" />
+                                             </image>
+                                        </ImageView>
+                                   </graphic>
+                              </Button>
+                         </children>
+                    </StackPane>
+
+
+                    <StackPane prefHeight="70" prefWidth="150">
+                         <children>
+                              <Button onAction="#MakeDirectry" mnemonicParsing="false"
+                                   style="-fx-background-color: transparent;  -fx-text-fill:white;" text="フォルダを追加" />
+                         </children>
+                    </StackPane>
+
+
+                    <StackPane prefHeight="70" prefWidth="90">
+                         <children>
+                              <Button onAction="#MakeFiles" mnemonicParsing="false"
+                                   style="-fx-background-color: transparent; -fx-text-fill:white;" text="画像を追加" />
+                         </children>
+                    </StackPane>
+
+
+               </children>
+          </HBox>
+
+     </top>
+
+     <center>
+          <VBox BorderPane.alignment="CENTER" style="-fx-background-color:#000000;">
+               <children>
+                    <StackPane prefWidth="${MasterPane.height*0.3}">
+                         <Label text="最近使ったコンテンツ" style="-fx-font-size:40; -fx-text-fill:white;" />
+                    </StackPane>
+                    <HBox Alignment="CENTER">
+                         <children>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows1_2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Upper_img_1">
+                                                       <Image url="Data/User_Image/41cZuyISZFL._AC_SX368_.jpg" />
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows2_2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Upper_img_2">
+                                                       <Image url="Data/User_Image/41jCyNxwPIL._AC_SX368_.jpg" />
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows3_2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Upper_img_3">
+                                                       <Image
+                                                            url="Data/User_Image/51+X5dWrGAL._PJprime-reading2,TopRight,0,-50._SY300_.jpg" />
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows4_2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Upper_img_4">
+                                                       <Image url="Data/User_Image/51AiGhpki4L._AC_SX368_.jpg" />
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows5_2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Upper_img_5">
+                                                       <image>
+                                                            <Image url="Data/User_Image/51f-Wvi3suL._AC_SX368_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows6_2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Upper_img_6">
+                                                       <image>
+                                                            <Image url="Data/User_Image/51gInNJhG5L._AC_SX368_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                         </children>
+                    </HBox>
+                    <StackPane prefHeight="${MasterPane.height*0.3}">
+                         <Label text="あなたへのおすすめ" style="-fx-font-size:40px; -fx-text-fill:white;" />
+                    </StackPane>
+                    <HBox Alignment="CENTER">
+                         <children>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows1" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Lower_img_1">
+                                                       <image>
+                                                            <Image url="Data/User_Image/51xfDOcXcgL._AC_SX368_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows2" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Lower_img_2">
+                                                       <image>
+                                                            <Image url="Data/User_Image/51zQOZRh41L._AC_SX184_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows3" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Lower_img_3">
+                                                       <image>
+                                                            <Image url="Data/User_Image/519LGmUPpYL._AC_SX368_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows4" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Lower_img_4">
+                                                       <image>
+                                                            <Image url="Data/User_Image/Untitled.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows5" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Lower_img_5">
+                                                       <image>
+                                                            <Image url="Data/User_Image/51k+wturc2L._AC_SX184_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                              <StackPane prefWidth="${MasterPane.height*0.3}">
+                                   <children>
+                                        <Button onAction="#ShowSecondWindows6" mnemonicParsing="false"
+                                             style="-fx-background-color: transparent;">
+                                             <graphic>
+                                                  <ImageView fitHeight="${MasterPane.height*0.3}" pickOnBounds="true"
+                                                       preserveRatio="true" fx:id="Lower_img_6">
+                                                       <image>
+                                                            <Image url="Data/User_Image/51pU7ijyhaL._AC_SX368_.jpg" />
+                                                       </image>
+                                                  </ImageView>
+                                             </graphic>
+                                        </Button>
+                                   </children>
+                              </StackPane>
+                         </children>
+                    </HBox>
+               </children>
+          </VBox>
+     </center>
+
+
+</BorderPane>
